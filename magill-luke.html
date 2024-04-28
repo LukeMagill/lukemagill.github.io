@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Luke Magill's resume</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        font-size: 11pt;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      p + p {
+        margin-top: 8px;
+      }
+
+      h3, h4, h5 {
+        margin: 6px 0;
+      }
+
+      header {
+        border-bottom: 2px solid rgb(115, 178, 188);
+        padding: 12px 0;
+      }
+
+      header, section.non-title {
+        margin: 0 auto;
+        max-width: 720px;
+      }
+      header>* { display: inline; }
+
+      section.non-title {
+        display: flex;
+      }
+
+      div.left-column {
+        width: calc(70% - 12px);
+        margin-left: -12px;
+      }
+      div.right-column {
+        width: calc(30% - 12px);
+        margin-right: -12px;
+        border-left: 2px solid rgb(115, 178, 188);
+      }
+      div.left-column, div.right-column {
+        padding: 12px;
+      }
+
+      .right-column h3 {
+        padding-bottom: 6px;
+      }
+      .right-column h3 {
+        border-bottom: 1px solid #AAA;
+      }
+
+      dt {
+        margin-top: 16px;
+        font-style: italic;
+      }
+
+      dd {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(60, 60, 199);
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 16px;
+      }
+      li {
+        padding: 0;
+      }
+
+      h5 {
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      .timeline {
+        display: flex;
+        margin-top: 8px;
+        border-top: 1px solid #CCC;
+        padding-top: 8px;
+      }
+      .timeline>* {
+        padding: 0 8px;
+      }
+      .timeline>*:first-child {
+        width: 17%;
+      }
+      .timeline>*:last-child {
+        width: 83%;
+      }
+
+      @media print {
+        html, body {
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Luke Magill</h1>
+      <h3>Software Engineer</h3>
+    </header>
+    <section class="non-title">
+      <div class="left-column">
+        <p>
+          A proven, results-oriented technical leader who is able to dive deep
+          and create high-level designs over every aspect of complex systems
+          while maintaining the ability to delegate.
+        </p>
+        <p>
+          With over fifteen years of programming experience I have built all
+          manner of technical systems including ETL data processors, backend
+          services, and front-end UX.
+        </p>
+        <section>
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div>
+              <div>Feb 2019 -</div>
+              <div>Present</div>
+            </div>
+            <div>
+              <h4>Google</h4>
+              <h5>Software Engineering Technical Lead</h5>
+              <ul>
+                <li>
+                  <strong>DMA 5(2):</strong>
+                  As part of researching general privacy for my team I
+                  discovered that a recent legislation with serious penalties
+                  was not being properly handled by our team. After some amount
+                  of research I determined that a new team was needed to address
+                  the issue. I created a plan and presented it to leadership
+                  and a team was created that I led which eventually included
+                  50 to 100 engineers and lasted for 6 months. The project
+                  was a success and no issues with our system occurred.
+                </li>
+                <li>
+                  <strong>Generic ingestion:</strong>
+                  After completing our streaming pipeline, I led three other
+                  engineers through inception, design, and development of a
+                  generic ingestion pipeline that was able to pipe data from any
+                  source to our ML backend or data store based on a
+                  configuration file.
+                </li>
+                <li>
+                  <strong>Cross-continental team leadership:</strong>
+                  The majority of my team for at least one year of my time
+                  worked out of Hyderabad. During this year I spent four weeks
+                  total in Hyderabad and had meetings most nights in order to
+                  provide leadership and collaboration.
+                </li>
+                <li>
+                  <strong>Streaming pipeline:</strong>
+                  I was the technical lead on a major streaming ETL data and
+                  migration project where I oversaw three other engineers and
+                  several vendors which decreased our data latency from three
+                  hours to 15 minutes and combined several different data
+                  formats into a single, standardized data warehouse.
+                </li>
+                <li>
+                  I hosted an intern and I have had the highest interview
+                  count per quarter for a team of 150 engineers.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div>
+              <div>Mar 2012 -</div>
+              <div>Feb 2019</div>
+            </div>
+            <div>
+              <h4>Microsoft</h4>
+              <h5>Software Engineer</h5>
+              <p>
+                Worked on windows phone store, windows store, universal store,
+                and partner incentives on C# web service back ends in Azure and
+                React/JavaScript UX front-ends.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div>
+              <div>Jun 2008 -</div>
+              <div>Mar 2012</div>
+            </div>
+            <div>
+              <h4>Intelius</h4>
+              <h5>Software Engineer</h5>
+              <p>
+                My first job was to work on a PhP web site at a small company.
+              </p>
+            </div>
+          </div>
+
+          <h3>Education</h3>
+
+          <div class="timeline">
+            <div>
+              <div>Sep 2004 -</div>
+              <div>Mar 2008</div>
+            </div>
+            <div>
+              <h4>Bachelor of Science in Computer Science</h4>
+              <h5>Central Washington University</h5>
+              <p>
+                Specializing in artificial intelligence, I had a 3.85 GPA, was
+                on the Dean's list every quarter, and assisted my professors
+                with their research.
+              </p>
+            </div>
+          </div>
+
+          <h3>Research</h3>
+          <div class="timeline">
+            <div>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  Andonie R., Fabry-Asztalos L., Abdul-Wahid C., AbdulWahid S.,
+                  Barker G., Magill L., 
+                  <em>
+                    Fuzzy ARTMAP Prediction of Biological Activities for
+                    Potential HIV-1 Protease Inhibitors Using a Small Molecular
+                    Data Set,
+                  </em>
+                  IEEE/ACM Transactions on Computational Biology and
+                  Bioinformatics, Vol. 8, No. 1, January/February 2011
+                </li>
+                <li>
+                  Andonie R., Fabry-Asztalos L., Magill L., AbdulWahid S.
+                  <em>
+                    A New Fuzzy ARTMAP Approach for Predicting Biological
+                    Activity of Potential HIV1 Protease Inhibitors,
+                  </em>
+                  Proceedings of the IEEE International Conference on
+                  Bioinformatics and Biomedicine (BIBM 2007), San Jose, CA, Nov
+                  2-4, 2007, IEEE Computer Society Press, ISBN 0-7695-3031-1,
+                  56-61
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="right-column">
+        <em>I am a US Citizen and authorized to work in the US.</em>
+        <h3>Contact info</h3>
+        <dl id="personal-info">
+          <dt>LinkedIn</dt>
+          <dd>
+            <a
+                href="https://www.linkedin.com/in/luke-magill/"
+                target="_blank">
+              linkedin.com/in/luke-magill
+          </a></dd>
+        </dl>
+
+        <h3>Skills</h3>
+
+        <ul>
+          <li>Team leadership</li>
+          <li>Streaming and batch data pipelines</li>
+          <li>Web services</li>
+          <li>Databases</li>
+          <li>Cloud infrastructure</li>
+          <li>Rest</li>
+          <li>UX</li>
+        </ul>
+
+        <h3>Technologies</h3>
+        
+        <ul>
+          <li>Java</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>SQL and NoSql</li>
+          <li>Apache beam and flume</li>
+          <li>Git</li>
+        </ul>
+
+        <h3>Just for fun</h3>
+
+        <p>
+          See me sing on my youtube channel!
+          <a
+            href="https://www.youtube.com/@lcmagill"
+            target="blank">youtube.com/@lcmagill</a>
+        </p>
+
+      </div>
+    </section>
+  </body>
+</html>
