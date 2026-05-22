@@ -1,0 +1,23 @@
+{
+  "name": "lukemagill.github.io",
+  "version": "1.0.0",
+  "description": "My personal GitHub Pages site and resume generator.",
+  "scripts": {
+    "generate": "node generate-resumes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeMagill/lukemagill.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LukeMagill/lukemagill.github.io/issues"
+  },
+  "homepage": "https://github.com/LukeMagill/lukemagill.github.io#readme",
+  "devDependencies": {
+    "md-to-pdf": "^5.2.5"
+  }
+}
