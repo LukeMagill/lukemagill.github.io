@@ -15,7 +15,7 @@ Senior software engineer and technical lead with 18+ years of experience buildin
 
 **Technical leadership:** Technical design, project decomposition, cross-team execution, mentoring, on-call leadership, production operations  
 **Infrastructure:** Distributed systems, streaming and batch data pipelines, ML feature quality, anomaly detection, observability, SLIs/SLOs, production tooling  
-**Backend/data:** Java, Python, C#, SQL, NoSQL, REST services, data warehouse systems, orchestration, ETL/ELT  
+**Backend/data:** Java, Python, C#, GoLang (go), SQL, NoSQL, REST services, data warehouse systems, orchestration, ETL/ELT  
 **Frontend/cloud:** TypeScript, JavaScript, React, AngularJS, Azure, cloud storage, service bus/queues, CI/testing
 
 ## Experience

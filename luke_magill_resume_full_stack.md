@@ -14,7 +14,7 @@ Senior full-stack infrastructure engineer and technical lead with 18+ years of e
 ## Skills
 
 **Frontend / UX:** React, TypeScript, JavaScript, AngularJS, HTML, CSS, D3, Web UX architecture, developer-facing tooling  
-**Backend / APIs:** Java, Python, C#, REST APIs, service design, distributed workflows, asynchronous processing, queue-based systems  
+**Backend / APIs:** Java, Python, C#, GoLang (go), REST APIs, service design, distributed workflows, asynchronous processing, queue-based systems  
 **Infrastructure:** Cloud infrastructure, orchestration, cluster/workload operations, production reliability, SLIs/SLOs, observability, on-call tooling  
 **Data / storage:** Streaming and batch pipelines, ETL/ELT, SQL, NoSQL, data warehouses, metadata systems, configuration-driven ingestion  
 **Leadership:** Technical design, project decomposition, cross-team execution, mentoring, production incident analysis, customer-focused delivery
