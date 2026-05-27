@@ -73,6 +73,7 @@ Built PHP/MySQL web applications, partner services, and transaction systems for 
 - Built secure chargeback upload tooling, custom CSV partner services, SOAP-based partner integrations, and maintained internal A/B testing infrastructure.
 
 ## Education
+**2004 - 2008**f
 
 **Bachelor of Science, Computer Science** — Central Washington University  
 GPA: 3.85; specialization in artificial intelligence

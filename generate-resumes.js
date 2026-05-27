@@ -1,6 +1,18 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const { mdToPdf } = require('md-to-pdf');
+
+function mdToDocx(sourceMd, outputPath) {
+  const tempMd = path.resolve(`${outputPath}.tmp.md`);
+  fs.writeFileSync(tempMd, sourceMd);
+  try {
+    execSync(`pandoc "${tempMd}" -o "${outputPath}"`, { stdio: 'inherit' });
+    console.log(`Written ${outputPath}`);
+  } finally {
+    fs.unlinkSync(tempMd);
+  }
+}
 
 async function generate() {
   if (!fs.existsSync('personal-info.json')) {
@@ -36,6 +48,9 @@ async function generate() {
     fs.writeFileSync(fullPdfPath, fullResult.content);
     console.log(`Written ${fullPdfPath}`);
 
+    const fullDocxPath = path.resolve(`${name}_full.docx`);
+    mdToDocx(fullMd, fullDocxPath);
+
     // --- Contact-free version ---
     const contactFreeMd = source.split('\n').filter(line => {
       const trimmed = line.trim();
@@ -46,25 +61,10 @@ async function generate() {
     const contactFreeResult = await mdToPdf({ content: contactFreeMd }, { pdf_options: { format: 'Letter' } });
     fs.writeFileSync(contactFreePdfPath, contactFreeResult.content);
     console.log(`Written ${contactFreePdfPath}`);
+
+    const contactFreeDocxPath = path.resolve(`${name}_contact_free.docx`);
+    mdToDocx(contactFreeMd, contactFreeDocxPath);
   }
-
-  // --- Public site resume (contact-free HTML+PDF) from infrastructure ---
-  const infraPath = path.resolve('luke_magill_resume_infrastructure.md');
-  const infraSource = fs.readFileSync(infraPath, 'utf-8');
-  const publicMd = infraSource.split('\n').filter(line => {
-    const trimmed = line.trim();
-    return !(trimmed.includes('Email:') && trimmed.includes('Phone:') && trimmed.includes('Location:'));
-  }).join('\n');
-
-  const publicHtmlPath = path.resolve('magill-luke.html');
-  const htmlResult = await mdToPdf({ content: publicMd }, { as_html: true });
-  fs.writeFileSync(publicHtmlPath, htmlResult.content);
-  console.log(`Written ${publicHtmlPath}`);
-
-  const publicPdfPath = path.resolve('magill-luke.pdf');
-  const publicResult = await mdToPdf({ content: publicMd }, { pdf_options: { format: 'Letter' } });
-  fs.writeFileSync(publicPdfPath, publicResult.content);
-  console.log(`Written ${publicPdfPath}`);
 }
 
 generate().catch(err => {
